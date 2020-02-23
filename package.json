@@ -1,0 +1,27 @@
+{
+  "name": "interview_coding_challenge",
+  "version": "1.0.0",
+  "description": "An application in which a user can post to a wall and read other comments posted on the wall",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "export NODE_ENV=test&& jasmine",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NG-Rich/interview_coding_challenge.git"
+  },
+  "author": "Richard Chan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NG-Rich/interview_coding_challenge/issues"
+  },
+  "homepage": "https://github.com/NG-Rich/interview_coding_challenge#readme",
+  "devDependencies": {
+    "jasmine": "^3.5.0",
+    "request": "^2.88.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
