@@ -10,8 +10,8 @@ describe("routes : static", () => {
         expect(res.statusCode).toBe(200);
         expect(body).toContain("Welcome to Wallchat!");
         done();
-      })
+      });
     });
-  }); // End of GET /
+  }); // End of describe GET /
 
 }); // End of routes:static

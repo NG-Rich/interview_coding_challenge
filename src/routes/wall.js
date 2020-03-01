@@ -1,0 +1,7 @@
+const express = require("express");
+const router = express.Router();
+const wallController = require("../controllers/wallController");
+
+router.get("/wall", wallController.index);
+
+module.exports = router;
