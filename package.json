@@ -18,10 +18,12 @@
   },
   "homepage": "https://github.com/NG-Rich/interview_coding_challenge#readme",
   "devDependencies": {
+    "faker": "^4.1.0",
     "jasmine": "^3.5.0",
     "request": "^2.88.2"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "pg": "^7.4.1",

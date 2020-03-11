@@ -6,11 +6,29 @@
   <body>
     <%- include('../static/partials/navbar'); %>
 
-      <main class="container">
-        <header class="my-4 text-center">
-          <h1>Wallchat</h1>
-          <p>text here</p>
-        </header>
+      <main class="my-4 container">
+        <h1 class="text-center">Wallchat</h1>
+          <ul class="list-group">
+            <% posts.forEach((post) => { %>
+              <li class="list-group-item">
+                <h5> <%= post.title %> </h5>
+                <section id="poster_name">
+                  <%= post.name %> - <%= post.createdAt %>
+                </section>
+                <section>
+                  <%= post.body %>
+                </section>
+              </li>
+            <% }) %>
+            <form style="width:50%" action="/wall/post/create" method="post">
+              <div class="form-group">
+                <h3 class="my-4">New Post</h3>
+                <input type="text" class="form-control" name="title" aria-describedby="titleHelp" placeholder="Enter title">
+                <textarea name="body" rows="5" class="form-control" aria-describedby="bodyHelp" placeholder="Enter post"></textarea>
+              </div>
+              <button type="submit" class="btn-primary btn">Submit</button>
+            </form>
+          </ul>
       </main>
 
     <%- include('../static/partials/baseScripts'); %>
