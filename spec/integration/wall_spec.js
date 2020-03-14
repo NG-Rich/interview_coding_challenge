@@ -11,6 +11,7 @@ describe("routes : wall", () => {
 
     sequelize.sync({force: true}).then((res) => {
       Post.create({
+        name: "Anonymous 123456789",
         title: "My First Post",
         body: "This post is awesome!"
       })
